@@ -29,7 +29,7 @@ function wish() {
 }
 
 window.addEventListener("load", () => {
-    wish()
+    // wish()
 })
 
 let speechRecognition = window.speechRecognition || window.webkitSpeechRecognition
@@ -78,9 +78,26 @@ function takeCommand(query) {
         speak("opening calculator")
         window.open("calculator://")
     }
+    else if (query.includes("open figma")) {
+        speak("opening figma")
+        window.open("figma://")
+    }
+    else if (query.includes("open vs code")||query.includes("open vscode")) {
+        speak("opening vscode")
+        window.open("vscode://")
+    }
     else if (query.includes("open wp") || query.includes("open whatsapp")) {
         speak("opening whats-app")
         window.open("https://web.whatsapp.com/")
+    }
+    else if (query.includes("open my tab") || query.includes("open my tabs")) {
+        speak("opening your tabs")
+        // window.open("https://web.whatsapp.com/")
+        window.open("https://www.apnacollege.in/start"),
+        window.open("https://developer.mozilla.org/en-US/"),
+        window.open("https://chatgpt.com/"),
+        window.open("https://www.youtube.com/"),
+        window.open("https://github.com/Dhrubamaity")
     }
     else if (query.includes("time")) {
         let time = new Date().toLocaleString("en-US", {
