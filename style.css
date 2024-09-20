@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+    background-image: linear-gradient(to right, rgb(128, 14, 210), black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px ;
+}
+
+#div {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    /* border: 1px solid red; */
+    margin: 10px;
+}
+
+.right {
+    background-image: url(./images/nova2.png);
+    background-size: cover;
+    transform: scaleX(-1);
+}
+.output{
+    width: 500px;
+    height: 200px;
+    border: 1px solid rgb(0, 255, 251);
+    backdrop-filter: blur(7px);
+    position: fixed;
+    top: 200px;
+    z-index: 9;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+span {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 255, 8));
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-size: 82px;
+}
+button{
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(50, 50, 226));
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgb(8, 0, 255) inset; 
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 2px 2px 8px rgb(45, 45, 45);
+   
+}
